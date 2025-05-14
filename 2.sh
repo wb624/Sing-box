@@ -3,7 +3,8 @@ export LC_ALL=C
 
 X1=$(whoami)
 X2=$(hostname)
-X3=${UUID:-$(echo -n "$X1@$X2" | md5sum | head -c 32 | sed 's/^................................$/\1-\2-\3-\4-\5/')}
+UUID_RAW=$(echo -n "$X1@$X2" | md5sum | head -c 32)
+X3=${UUID:-"${UUID_RAW:0:8}-${UUID_RAW:8:4}-${UUID_RAW:12:4}-${UUID_RAW:16:4}-${UUID_RAW:20:12}"}
 X4=${NEZHA_SERVER:-''}
 X5=${NEZHA_PORT:-''}
 X6=${NEZHA_KEY:-''}
