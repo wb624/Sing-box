@@ -63,7 +63,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/test/sb_00.sh)
 * v0哪吒变量形式:NEZHA_SERVER=nezha.abc.com  v1哪吒变量形式:NEZHA_SERVER=nezha.abc.com:8008
 * 可选变量：CHAT_ID BOT_TOKEN UUID NEZHA_SERVER NEZHA_PORT NEZHA_KEY SUB_TOKEN
 ```
-bash <(curl -Ls https://github.com/wb624/Sing-box/blob/main/2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/wb624/Sing-box/blob/main/2.sh)
 ```
 
 ## Serv00|CT8 tuic无交互一键安装脚本
